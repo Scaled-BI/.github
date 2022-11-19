@@ -38,7 +38,7 @@ The projects consists of multiple repositories such as:
 
 - [ShinyProxy](https://github.com/ScaledBI/shinyproxy) to orchestrate docker containers
 
-- [PostgresSLQ](https://github.com/ScaledBI/demo-postgres) containing dummy data
+- [PostgresSQL](https://github.com/ScaledBI/demo-postgres) containing dummy data
 
 - [Apache-Zeppelin](https://github.com/ScaledBI/demo-zeppelin)  containing demo notebooks
 
@@ -53,10 +53,7 @@ The projects consists of multiple repositories such as:
 - [R Markdowns](https://github.com/ScaledBI/demo-R-project) containing demo notebooks
 
 ## Quick Installation 
-
-
-
-(via Docker and Docker-Compose)
+**(via Docker and Docker-Compose)**
 
 Simply clone [demo-postgres](https://github.com/ScaledBI/demo-postgres) and execute
 ```sh
@@ -71,7 +68,7 @@ sh build-image.sh
 ```
 Next open http://localhost:8080/ and fill in *simple* [credentials](https://github.com/ScaledBI/shinyproxy/blob/main/application.yml#L16)
 
-## Usage
+## Usage 101
 
 
 # 😎 About Us <a name = "about-us"></a>
