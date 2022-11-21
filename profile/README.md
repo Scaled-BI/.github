@@ -56,19 +56,20 @@ The projects consists of multiple repositories such as:
 **(via Docker and Docker-Compose)**
 
 Simply clone [demo-postgres](https://github.com/ScaledBI/demo-postgres) and execute
+in the `/demo-postgres` project the following
 ```sh
 sh build-image.sh
 ```
-which downloads the dummy data dependencies.
+which deployes a postgres-db and creates the dummy data dependencies.
 
 Next clone [ShinyProxy](https://github.com/ScaledBI/shinyproxy) and execute
 
+in the `/shinyproxy` project the following
+
 ```sh
 sh build-image.sh
 ```
+which downloads *shinyproxy-2.6.1.jar* For more on configuring and orchestration of your BI please visit [ShinyProxy](https://www.shinyproxy.io/documentation/configuration/)
+
 Next open http://localhost:8080/ and fill in *simple* [credentials](https://github.com/ScaledBI/shinyproxy/blob/main/application.yml#L16)
 
-## Usage 101
-
-
-# 😎 About Us <a name = "about-us"></a>
