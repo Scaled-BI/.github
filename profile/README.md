@@ -2,14 +2,11 @@
     <img src="images/ScaledBI.png" alt="scaledbi-banner">
 </p>
 
-
 ## Hi 👋, we hope you love Business Intelligence too!
 
-ScaledBI has been developed in the context of the [EARL 2022 London](https://www.ascent.io/earl) conference to illustrate the idea of distributed and domain-driven Business Intelligence.  Thus, ScaledBI fits right into the various [Data Mesh](https://www.oreilly.com/library/view/data-mesh/9781492092384/) initiatives across organizations.
+ScaledBI is an open source project, developed in the context of the EARL 2022 London conference, that illustrates how to enable data-driven decision making in organizations through domain-driven Business Intelligence (BI). It is designed to address the issues with classical BI, which can become a bottleneck in organizations due to its centralized nature.
 
-The project consists of various examples of how to deploy apps using [ShinyProxy](https://www.shinyproxy.io/). We made an attempt to consolidate various web-based interactive computing platforms into one common umbrella which we call ScaledBI.
-
-**Overall ScaledBI is an open source project to illustrate how to enanble your organization to make data-driven decisions.**
+ScaledBI illustrates how to use [ShinyProxy](https://www.shinyproxy.io/), a low cost, tool-agnostic framework for hosting and scaling BI tools such as Apache-Zeppelin, Jupyter, and R-Markdown notebooks, as well as providing IDEs such as R-Studio or Visual Studio Code. It is part of the Data Mesh initiative, which aims to establish a domain-oriented bureaucracy for developing BI within a Federated Governance structure. 
 
 # Table of Contents
 - [🏫 Introduction](#main-idea)
@@ -18,22 +15,12 @@ The project consists of various examples of how to deploy apps using [ShinyProxy
 
 
 # 🏫 Introduction <a name = "main-idea"></a>
-In comparison to other quantitative fields such as Machine Learning, Data Science or Data Engineering, Business Intelligence (BI) doesn't appeal that sexy. However, Business Intelligence is crucial to enable organizations to use insights from data and make informed decisions. In order to meet this expectation, it must possess certain characteristics and, above all, be scalable.
-
-### Issues with *Classical BI*
-Imagine being a part of an organization, which has a central BI team responsible for delivering data products such as shared datasets, analyses, reports and dashboards based on some agreed requirements. Given that centralized nature, the BI team is not able to handle all the analytical questions quickly enough and may become a bottleneck.
-### Alternative way doing BI
-In comparison to the to the centralized way of doing BI, the domain-driven approach underscores the role of various domains by enabling them to design, build, and run their data applications within a *standardized infrastructure*.
-
-### Scaling Business Intelligence
-Accordingly, to be able to scale Business Intelligence, the first step is to establish a domain-oriented bureaucracy that can develop its own Business Intelligence within a Federated Goverence. It is exactly this Federated Goverence that ScaledBI provides. 
-**That is, a low cost, tool-agnostic framework, which is able to host and scale Apache-Zeppelin, Jupyter and R-Markdown notebooks as well as providing IDEs such as R-Studio or Visual Studio Code**
-
+Business Intelligence is crucial for enabling organizations to use insights from data and make informed decisions. To scale BI, it is important to establish a domain-oriented bureaucracy that can develop its own BI within a Federated Governance structure. This is exactly what ScaledBI provides.
 
 # 📊 Getting started with ScaledBI <a name = "getting-started-with-scaledbi"></a>
 
+The ScaledBI project consists of multiple repositories, including:
 
-## Overview
 The projects consists of multiple repositories such as:
 
 - [ShinyProxy](https://github.com/ScaledBI/shinyproxy) to orchestrate docker containers
@@ -52,24 +39,29 @@ The projects consists of multiple repositories such as:
 
 - [R Markdowns](https://github.com/ScaledBI/demo-R-project) containing demo notebooks
 
-## Quick Installation 
-**(via Docker and Docker-Compose)**
+To get started with ScaledBI, follow these steps:
 
-Simply clone [demo-postgres](https://github.com/ScaledBI/demo-postgres) and execute
-in the `/demo-postgres` project the following
-```sh
+1. Clone the demo-postgres repository and execute the following command in the /demo-postgres project to deploy a Postgres database and create the dummy data dependencies:
+
+```bash
 sh build-image.sh
 ```
-which deployes a postgres-db and creates the dummy data dependencies.
 
-Next clone [ShinyProxy](https://github.com/ScaledBI/shinyproxy) and execute
+2. Clone the ShinyProxy repository and execute the following command in the /shinyproxy project to build the ShinyProxy Docker image:
 
-in the `/shinyproxy` project the following
-
-```sh
+```bash
 sh build-image.sh
 ```
-which downloads *shinyproxy-2.6.1.jar* For more on configuring and orchestration of your BI please visit [ShinyProxy](https://www.shinyproxy.io/documentation/configuration/)
 
-Next open http://localhost:8080/ and fill in *simple* [credentials](https://github.com/ScaledBI/shinyproxy/blob/main/application.yml#L16)
+3. Run ShinyProxy using Docker Compose:
+
+```bash
+docker-compose up
+```
+
+4. Open your web browser and go to http://localhost:8080. You should see the
+
+# 😎 About Us <a name = "about-us"></a>
+
+We are business intelligence professionals who are interested in bringing data mesh into the field of BI. Our passion for data-driven decision making led us to create ScaledBI, a summary of different approaches designed to enable organizations to adopt domain-driven Business Intelligence. By pointing out a low cost and tool-agnostic approach to hosting and scaling BI tools, we hope to address the issues with classical BI and make it easier for organizations to access the insights they need to thrive.
 
