@@ -1,7 +1,3 @@
-<p align="center">
-    <img src="images/ScaledBI.png" alt="scaledbi-banner">
-</p>
-
 ## Hi 👋, we hope you love Business Intelligence too!
 
 ScaledBI is an open source project, developed in the context of the EARL 2022 London conference, that illustrates how to enable data-driven decision making in organizations through domain-driven Business Intelligence (BI). It is designed to address the issues with classical BI, which can become a bottleneck in organizations due to its centralized nature.
